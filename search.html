@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./styles/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/home.css" />    
+</head>
+<body>
+    <nav id="navbar"></nav>
+    <div id="displaynews"></div>
+</body>
+</html>
+<script type="module">
+    import {navbar} from "./components/navbar.js"
+    import display from"./scripts/homepage.js"
+    import {getdata,getNews,debouncing} from "./scripts/getdata.js"
+    document.getElementById("navbar").innerHTML=navbar();
+    document.getElementById("search").addEventListener("submit",getNews);
+    document.getElementById("searchInput").addEventListener("input",debouncing);
+    
+    let query=localStorage.getItem("query");
+    console.log(query);
+    let url=`https://newsapi.org/v2/everything?q=${query}&apiKey=df8c7d1b8f054b3090e8be0335a0ab81`;
+    let data=getdata(url)
+     .then((res)=>{
+         console.log(res.articles)
+         display(res.articles)
+     })
+     </script>

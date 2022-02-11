@@ -1,0 +1,13 @@
+
+#displaynews{
+margin-left: 15%;
+
+display: grid;
+grid-template-columns: auto auto;
+}
+#displaynews>div{
+width: 45%;
+}
+#displaynews img{
+width: 100%;
+}

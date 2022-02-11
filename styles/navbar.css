@@ -1,0 +1,25 @@
+#navbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 10%;
+    height: 100%;
+    border: 1px solid;
+    z-index: 10;
+    padding: 2%;
+    margin-left: 0;
+    background-color: khaki;
+}
+#searchInput{
+    width: 100%;
+}
+#navbar button{
+    background-color: lawngreen;            
+}
+#searchDisplay{
+    width: 100%;    
+    max-height: 500px;
+    background-color: white;
+    overflow-x: scroll;
+    overflow-y:scroll ;
+}
