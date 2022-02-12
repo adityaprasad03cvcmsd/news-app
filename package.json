@@ -1,0 +1,19 @@
+{
+  "name": "news-app",
+  "version": "1.0.0",
+  "description": "app to watch the latest news and search news from around the globle which used a public api service.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adityaprasad03cvcmsd/news-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adityaprasad03cvcmsd/news-app/issues"
+  },
+  "homepage": "https://github.com/adityaprasad03cvcmsd/news-app#readme"
+}
